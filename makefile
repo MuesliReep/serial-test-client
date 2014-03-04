@@ -34,7 +34,7 @@ $(BLDDIR)/%.o: $(SRCDIR)/%.c
 	$(MKBLDDIR)
 	$(QUIET_CC)$(CC) $(CFLAGS) -c $< -o $@
 
-serial-test-server: $(BTJ_OBJ)
+serial-test-client: $(BTJ_OBJ)
 	$(QUIET_LINK)$(CC) $(LDOPTS) -o $(BTJ_BIN) $(BTJ_OBJ) $(LIBS)
 
 # do not move the following line:
