@@ -18,6 +18,7 @@ BTJ_BIN  = serial-test-client
 ALLTARGETS = serial-test-client
 
 SRC_FILES  = main.c
+SRC_FILES += serial.c
 
 ifndef V
   QUIET_CC   = @echo ' CC   ' $<;
